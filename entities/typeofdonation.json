@@ -1,0 +1,43 @@
+{
+  "id": "1961c0d6-e9a6-4bc8-8033-d0212deaa352",
+  "name": "typeofdonation",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "food",
+      "synonyms": [
+        "food"
+      ]
+    },
+    {
+      "value": "blood",
+      "synonyms": [
+        "blood"
+      ]
+    },
+    {
+      "value": "clothes",
+      "synonyms": [
+        "clothes",
+        "dress",
+        "pants",
+        "pant",
+        "school-dress",
+        "school dress",
+        "skkirts",
+        "skirts",
+        "socks",
+        "shoes",
+        "clothing"
+      ]
+    },
+    {
+      "value": "money",
+      "synonyms": [
+        "money"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "a3490445-8f6d-425d-af32-fe6bd9f728a9",
+  "name": "food",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "apple",
+      "synonyms": [
+        "apple",
+        "apples"
+      ]
+    },
+    {
+      "value": "mangoes",
+      "synonyms": [
+        "mangoes",
+        "mango"
+      ]
+    },
+    {
+      "value": "chapati",
+      "synonyms": [
+        "chapati",
+        "roti",
+        "puri"
+      ]
+    },
+    {
+      "value": "cooked vegetables",
+      "synonyms": [
+        "cooked vegetables",
+        "mix-veg",
+        "mixveg",
+        "paneer do piyaza",
+        "panner"
+      ]
+    },
+    {
+      "value": "non vegetarian",
+      "synonyms": [
+        "non vegetarian",
+        "non veg",
+        "meat",
+        "egg",
+        "chicken",
+        "mutton",
+        "fish",
+        "fish curry"
+      ]
+    },
+    {
+      "value": "vegetarian",
+      "synonyms": [
+        "vegetarian",
+        "veg",
+        "aloo dum",
+        "paneer butter masala",
+        "paneer",
+        "kofta",
+        "malai",
+        "malai kofta"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

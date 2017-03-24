@@ -1,0 +1,64 @@
+{
+  "id": "b25418f1-a1a0-4898-949f-f5fe3bf3a61c",
+  "name": "typeofblood",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "A-",
+      "synonyms": [
+        "A-"
+      ]
+    },
+    {
+      "value": "A+",
+      "synonyms": [
+        "A+",
+        "A +"
+      ]
+    },
+    {
+      "value": "AB +",
+      "synonyms": [
+        "AB +",
+        "AB+"
+      ]
+    },
+    {
+      "value": "AB-",
+      "synonyms": [
+        "AB-",
+        "AB -"
+      ]
+    },
+    {
+      "value": "B+",
+      "synonyms": [
+        "B+",
+        "B +"
+      ]
+    },
+    {
+      "value": "B -",
+      "synonyms": [
+        "B -",
+        "B +"
+      ]
+    },
+    {
+      "value": "O +",
+      "synonyms": [
+        "O +",
+        "O+"
+      ]
+    },
+    {
+      "value": "O-",
+      "synonyms": [
+        "O-",
+        "O -"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

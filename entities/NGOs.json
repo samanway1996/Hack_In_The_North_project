@@ -1,0 +1,53 @@
+{
+  "id": "3370eb41-c4f9-4b92-b4a1-439dd4fd7b3e",
+  "name": "NGOs",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "ngo A",
+      "synonyms": [
+        "ngo A",
+        "NGO a",
+        "NGO A"
+      ]
+    },
+    {
+      "value": "ngo B",
+      "synonyms": [
+        "ngo B",
+        "NGO B",
+        "ngo b"
+      ]
+    },
+    {
+      "value": "ngo c",
+      "synonyms": [
+        "ngo c",
+        "NGO c",
+        "NGO C"
+      ]
+    },
+    {
+      "value": "NGO D",
+      "synonyms": [
+        "NGO D",
+        "ngo d"
+      ]
+    },
+    {
+      "value": "NGO E",
+      "synonyms": [
+        "NGO E",
+        "ngo e"
+      ]
+    },
+    {
+      "value": "NGOA",
+      "synonyms": [
+        "NGOA"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

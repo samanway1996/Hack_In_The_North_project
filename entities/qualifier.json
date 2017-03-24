@@ -1,0 +1,32 @@
+{
+  "id": "ec4ca2e2-3744-4e82-b50e-55f1bbba8212",
+  "name": "qualifier",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "piece",
+      "synonyms": [
+        "piece",
+        "pieces"
+      ]
+    },
+    {
+      "value": "kg",
+      "synonyms": [
+        "kg",
+        "kiligrams",
+        "killo-gram",
+        "killogram"
+      ]
+    },
+    {
+      "value": "dozens",
+      "synonyms": [
+        "dozens",
+        "dozen"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
