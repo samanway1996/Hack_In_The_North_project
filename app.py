@@ -35,7 +35,7 @@ def makeWebhookResult(req):
     
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
     ngo= { 'buddha colony' : 'ngoA' , 'patna' : 'ngoB' , 'boring road' : 'ngoC' , 'rps more' : 'ngoD' , 'dps more' : 'ngoE' }
-    if req.get("result").get("action") != "no.item" or req.get("result").get("action") != "cloth.don" or req.get("result").get("action") !="donate.books":
+    if req.get("result").get("action") = "no.item" or req.get("result").get("action") = "cloth.don" or req.get("result").get("action") ="donate.books":
         result = req.get("result")
         parameters = result.get("parameters")
         location = parameters.get("address1")
