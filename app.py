@@ -27,85 +27,28 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 
-
-
 def makeWebhookResult(req):
-    x = req.get("result").get("action")
-#     if  x != "current.plan" and  (x != "current.planchange" and x != "bill.enquiry"):
-#         return {}
+    if req.get("result").get("action") != "no.item":
+        return {}
     
-    result = req.get("result")
-    parameters = result.get("parameters")
-    speech="hey"
-    message=""
-    plan = {'9155465072':"Free Roaming", '9572390164':"Free Calling", '919973212':"Free 1GB Data", '9973617212':"30p/min", '91998870950':"Free Videocalling"}
-    bill = {'9155465072': "100" , '9572390164': "200" , '919973212': "300" , '9973617212': "350.45" , '91998870950': "345.23" }
-    subscription = {'9155465072': "callerTuneActivated" , '9572390164': "none" , '919973212': "callerTuneActivated" , '9973617212': "none" , '91998870950': "callerTuneActivated" }
-    
-    number = parameters.get("Phonenumber")
-    if (plan.get(number) == None and number != None):
-        speech = "Your number doesnot exist in database, please try with another one :) " 
-    elif req.get("result").get("action") == "current.plan":
-        number = parameters.get("Phonenumber")
-        comp= parameters.get("Company")
-        contexts1=req.get("result").get("contexts")
-        contexts2 = contexts1[0].get("name")
-        #if contexts1[0].name == "test" or contexts1[0].name=="":
-        x = contexts1[0].get("parameters").get("prephone")
-        if x is None or x != number :
-            speech = "The current plan of the user with phone no. " + number + " is " + str(plan[number]) + "."
-        else :
-            y = contexts1[0].get("parameters").get("Plan")
-            speech = "The current plan of the user with phone no. " + number + " is " +  y + "."
-    elif req.get("result").get("action") == "current.planchange":
-        number = parameters.get("Phonenumber")
-        newplan = parameters.get("Plan")
-        prevplan = plan[number]
-        plan[number] = newplan
-        speech = "The plan is changed from  " + prevplan + " to " + str(plan[number]) + " for the " + number + "."
-    elif req.get("result").get("action") == "bill.enquiry":
-        number = parameters.get("Phonenumber")
-        speech = "The bill for   " + number + " is " + str(bill[number]) + "."
-        
-        
-        
-        
-    elif req.get("result").get("action") == "bill.highcomplain" :
-        number = parameters.get("Phonenumber")
-        subscription1 = subscription[number]
-        if subscription1 == "none" :
-            speech = "you phone no. " + number + " is not subscribed for any featues.."
-        else :
-            speech = "you phone no. " + number + " is  subscribed to " + subscription1 + "and do you want to unsubscribe this subscription ?"
-    
-    elif req.get("result").get("action") == "subscription.yes" :
-        number = parameters.get("Phonenumber")
-        speech = "you have been unsubscribed for the feature" + subscription[number] +"."
-        subscription[number] = "none"
-    
-    elif req.get("result").get("action") == "input.unknown" :
-        speech = "I Missed it! can you say that again...."
-#         with open('message.json') as json_data:
-#             message = json.loads(json_data)
-#             json_data.close()
-            
-        
+#     result = req.get("result")
+#     parameters = result.get("parameters")
+#     zone = parameters.get("shipping-zone")
+
+    #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
+
+    speech = "our ngo will be contacting you soon"
 
     print("Response:")
     print(speech)
 
     return {
-        
         "speech": speech,
-
         "displayText": speech,
-
         #"data": {},
         # "contextOut": [],
         "source": "apiai-onlinestore-shipping"
     }
-
-
 
 
 if __name__ == '__main__':
