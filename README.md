@@ -1,4 +1,6 @@
-In India,still a large section of our society is deprived of the basic needs of daily life i.e food,clothes,money,books etc.So, through this project, we are building a platform where the donors can directly communicate with the NGOs working in this field to donate their food,money,clothes etc.As there is a large amount of food wastage in parties,mess etc,so they can easily contact the nearest woring NGO through this and NGO will recieve it from them.<br>
+
+In India,still a large section of our society is deprived of the basic needs of daily life i.e food,clothes,money,books etc.So, through this project, we are building a platform where the donors can directly communicate with the NGOs working in this field to donate their food,money,clothes etc.As there is a large amount of food wastage in parties,mess etc,so they can easily contact the nearest working NGO through this and NGO will recieve it from them.<br>
+similarly, our chatbot provide a platform for people who are willing to donate foods , money ,clothes, books can donate it to the needy people.
 
 
 <br><u><b>WORKING</b></u><br>
