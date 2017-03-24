@@ -1,0 +1,46 @@
+{
+  "id": "59e529ae-a7c8-4aaf-b00c-9ea900a4a544",
+  "name": "address1",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "patna",
+      "synonyms": [
+        "patna"
+      ]
+    },
+    {
+      "value": "buddha colony",
+      "synonyms": [
+        "buddhacolony",
+        "buddhacolo.",
+        "budddha colony"
+      ]
+    },
+    {
+      "value": "boring road",
+      "synonyms": [
+        "boring road",
+        "boring road",
+        "boring road"
+      ]
+    },
+    {
+      "value": "rps more",
+      "synonyms": [
+        "rps more",
+        "rpsmore",
+        "rps"
+      ]
+    },
+    {
+      "value": "dps more",
+      "synonyms": [
+        "dps more",
+        "dps"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}
