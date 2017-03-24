@@ -1,0 +1,144 @@
+{
+  "userSays": [
+    {
+      "id": "ccb55072-b297-4de3-8e69-a964ce3200e1",
+      "data": [
+        {
+          "text": "i wanna donate "
+        },
+        {
+          "text": "500 $",
+          "alias": "unit-currency",
+          "meta": "@sys.unit-currency",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "NGOA",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4005d1f2-75f9-4492-9245-516037fa7671",
+      "data": [
+        {
+          "text": "i want to donate "
+        },
+        {
+          "text": "money",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "65b4cea7-c43b-4517-beba-bf5c8f3d9740",
+      "data": [
+        {
+          "text": "i wanna donate "
+        },
+        {
+          "text": "500 $",
+          "alias": "unit-currency",
+          "meta": "@sys.unit-currency",
+          "userDefined": false
+        },
+        {
+          "text": "  to "
+        },
+        {
+          "text": "NGOA",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "9b4d485c-24a1-4f81-a19e-282ba610b69a",
+  "name": "money",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "NGO",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.unit-currency",
+          "name": "unit-currency",
+          "value": "$unit-currency",
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "in which NGO which wanna  donate your money...."
+        },
+        {
+          "title": "KARTAVYA",
+          "imageUrl": "https://assets.ec.quoracdn.net/main-thumb-t-717539-200-kwgitzagsrfbarbqtmyuwrmxvguwbfuh.jpeg",
+          "buttons": [
+            {
+              "text": "A NGO by Ismities to uplift the life of under previliged chidrens by providing theem gguidances and education",
+              "postback": "NGOA"
+            }
+          ],
+          "type": 1
+        },
+        {
+          "title": "Samitra",
+          "imageUrl": "https://www.telegraphindia.com/1150202/images/02DhanISM3.jpg",
+          "buttons": [
+            {
+              "text": "A NGO by Ismities to uplift the living condition of poors..",
+              "postback": "NGOB"
+            }
+          ],
+          "type": 1
+        },
+        {
+          "title": "FFI",
+          "subtitle": "",
+          "imageUrl": "https://pbs.twimg.com/profile_images/424638796236197888/Uqf49kX3_400x400.jpeg",
+          "buttons": [
+            {
+              "text": "A NGO by Ismities to uplift the life of under previliged chidrens by providing them guidances and education and largest donor donation campaigner .It also proviiding counselling to peoples.",
+              "postback": "NGOC"
+            }
+          ],
+          "type": 1
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

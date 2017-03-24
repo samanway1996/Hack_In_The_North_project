@@ -1,0 +1,133 @@
+{
+  "userSays": [
+    {
+      "id": "58bbff6d-6fa2-48a8-a76e-23e3f22ca372",
+      "data": [
+        {
+          "text": "food"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4afdeff1-f268-461e-9c75-5b01c005dd04",
+      "data": [
+        {
+          "text": "food",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " available in "
+        },
+        {
+          "text": "buddhacolony",
+          "alias": "address1",
+          "meta": "@address1",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "225063c2-3e14-4b1d-a0b6-b58aef8683fc",
+      "data": [
+        {
+          "text": "i want to donate food"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fc29968a-c642-4928-9b5f-8e77900bb2cc",
+      "data": [
+        {
+          "text": "I have some excess "
+        },
+        {
+          "text": "food",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fd46b100-d6d3-4b1f-a65a-43b98bdde22c",
+      "data": [
+        {
+          "text": "food",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " i wanna donate"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4ba87e83-7795-42e2-86c9-c9ce87966b62",
+      "data": [
+        {
+          "text": "Okay I want to "
+        },
+        {
+          "text": "donate",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " food "
+        },
+        {
+          "text": "today",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "fc58e676-0ebc-4ca6-982a-0fc711449890",
+  "name": "foodDonation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "food",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@address1",
+          "name": "address1",
+          "value": "$address1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "ok fine which are the itemsyou want to doante??"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

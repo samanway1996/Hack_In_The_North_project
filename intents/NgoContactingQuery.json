@@ -1,0 +1,50 @@
+{
+  "userSays": [
+    {
+      "id": "156b6d4f-a98d-4d85-8130-9ec0fa844f43",
+      "data": [
+        {
+          "text": "your code is "
+        },
+        {
+          "text": "4567456",
+          "alias": "number-integer",
+          "meta": "@sys.number-integer",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "6673ca59-9d33-4fa5-8e4e-12d0727a55ca",
+  "name": "NgoContactingQuery",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "number-integer",
+          "value": "$number-integer",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

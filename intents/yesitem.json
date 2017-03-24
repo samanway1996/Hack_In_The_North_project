@@ -1,0 +1,124 @@
+{
+  "userSays": [
+    {
+      "id": "0b4235fc-85d6-4ee0-af0a-627d3050305b",
+      "data": [
+        {
+          "text": "yes I wanna add more"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f3356d5d-949e-4515-bfcc-1b2b52416691",
+      "data": [
+        {
+          "text": "yes i wanna add "
+        },
+        {
+          "text": "5",
+          "alias": "number",
+          "meta": "@number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "kg",
+          "alias": "qualifier",
+          "meta": "@qualifier",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "apples",
+          "alias": "food1",
+          "meta": "@food",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "cab25f7e-095a-45d5-933b-d8fee853352d",
+  "name": "yesitem",
+  "auto": true,
+  "contexts": [
+    "yesitem"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "yesitem",
+          "lifespan": 5
+        },
+        {
+          "name": "noitem",
+          "lifespan": 5
+        },
+        {
+          "name": "food",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@food",
+          "name": "food1",
+          "value": "$food1",
+          "prompts": [
+            "Which kinda food do you have in excess?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@qualifier",
+          "name": "qualifier",
+          "value": "$qualifier",
+          "prompts": [
+            "How much food do u have in excess?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            "How much food do u have in excess?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@address1",
+          "name": "address1",
+          "value": "$address1",
+          "prompts": [],
+          "defaultValue": "#food.address1"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "do you want to add more"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

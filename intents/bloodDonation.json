@@ -1,0 +1,118 @@
+{
+  "userSays": [
+    {
+      "id": "eefe8f07-c2a7-44c4-938e-d3883527aba4",
+      "data": [
+        {
+          "text": "i wanna donate "
+        },
+        {
+          "text": "blood",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bcbcb866-81a7-40dc-b0fc-a17431cc9f42",
+      "data": [
+        {
+          "text": "donate "
+        },
+        {
+          "text": "blood",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "969cbaab-24fa-4038-9c71-2d7340136c58",
+      "data": [
+        {
+          "text": "blood",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "b4b72972-3707-47a1-8ea4-941f4dfaadde",
+  "name": "bloodDonation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "prompts": [
+            "what type of donation you are going to do...",
+            "type of donation.."
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "age",
+          "value": "$age"
+        },
+        {
+          "required": true,
+          "dataType": "@sys.unit-weight-name",
+          "name": "weight",
+          "value": "$weight",
+          "prompts": [
+            "what is your weight?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@typeofblood",
+          "name": "blood",
+          "value": "$blood",
+          "prompts": [
+            "what is your blood group??"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "title": "send email to",
+          "imageUrl": "http://www.prathidhwani.org/wp-content/uploads/2015/04/blood_donation_camp.png",
+          "buttons": [
+            {
+              "text": "NGOs DEALING WITH BLOOD BANK",
+              "postback": "NGOs DEALING WITH BLOOD BANK"
+            },
+            {
+              "text": "BLOOD BANK",
+              "postback": "BLOOD BANK"
+            }
+          ],
+          "type": 1
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

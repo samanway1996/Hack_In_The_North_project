@@ -1,0 +1,83 @@
+{
+  "userSays": [
+    {
+      "id": "0794ead8-5bd4-4c62-a792-ecba0815e857",
+      "data": [
+        {
+          "text": "that\u0027s enough i don\u0027t wanna",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " add"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9f47151f-ead2-47d9-84c5-c5ebe3dcd907",
+      "data": [
+        {
+          "text": "no i donot want to add"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "95c1f4fd-cce2-4583-b4c6-05b7295949e0",
+      "data": [
+        {
+          "text": "no"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e2f98c4d-8597-414d-afb7-be48cdcdb810",
+      "data": [
+        {
+          "text": "i don\u0027t want to add more items"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "61f0ce7e-dac5-4d24-9342-155f42cf440d",
+  "name": "Noitem",
+  "auto": true,
+  "contexts": [
+    "noitem"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "no.item",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@address1",
+          "name": "address1",
+          "value": "$address1",
+          "prompts": [],
+          "defaultValue": "#food.address1"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,78 @@
+{
+  "userSays": [
+    {
+      "id": "53ae46ec-bbe3-4d76-8ca6-381ec6ce210d",
+      "data": [
+        {
+          "text": "donate more "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e92c4d38-e733-4ec6-96f6-26d1e5b415ac",
+      "data": [
+        {
+          "text": "do you want to donate more "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": ".."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "0d46436d-a839-4ebc-948c-5c5b22a3f16e",
+  "name": "donateMoreClothes",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "donate.more",
+      "affectedContexts": [
+        {
+          "name": "yesclothes",
+          "lifespan": 5
+        },
+        {
+          "name": "noclothes",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

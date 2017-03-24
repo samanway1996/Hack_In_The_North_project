@@ -1,0 +1,253 @@
+{
+  "userSays": [
+    {
+      "id": "45ebe25d-25e6-47ef-b127-a8ce926a0e12",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "A-",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ef59ad4e-dd53-4b47-9ef5-20d19989cda1",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "A+",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e08b13f3-49d5-463d-b3b7-ce7b16439c94",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : B-"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c3e4e1ff-64c5-4667-969b-185a62936777",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "AB-",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5da316b4-4990-4429-b361-11ac751e21ba",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "AB+",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dbf608db-fdd9-4678-8a47-1f02c3143d78",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "O+",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d4caf8bd-5bb4-44e0-a54a-647ff8fa06e4",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "O-",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "aca104b8-a430-4240-a3e0-c12e37c72300",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " GROUP : "
+        },
+        {
+          "text": "B+",
+          "alias": "typeofblood",
+          "meta": "@typeofblood",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "45669a7a-8995-4206-9c14-5aafc92ede37",
+      "data": [
+        {
+          "text": "NGOs",
+          "alias": "NGOs",
+          "meta": "@NGOs",
+          "userDefined": false
+        },
+        {
+          "text": " DEALING WITH "
+        },
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e1fc5080-276b-4f57-8d2c-4eee1d87a41e",
+      "data": [
+        {
+          "text": "BLOOD",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " BANK"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "60458938-fd7c-432d-bad6-22949731bec9",
+  "name": "noreply",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "isList": false
+        },
+        {
+          "dataType": "@NGOs",
+          "name": "NGOs",
+          "value": "$NGOs",
+          "isList": false
+        },
+        {
+          "dataType": "@typeofblood",
+          "name": "typeofblood",
+          "value": "$typeofblood",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "email has been send to all the member of the group..."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

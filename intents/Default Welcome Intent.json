@@ -1,0 +1,81 @@
+{
+  "userSays": [
+    {
+      "id": "e213111a-31ef-4f03-a32d-205f61c9a54a",
+      "data": [
+        {
+          "text": "hye there"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d1f62c84-04e8-43af-bf03-f4fd08f2e316",
+      "data": [
+        {
+          "text": "hey"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f869a586-f86f-4f72-b013-4d12f13923a0",
+      "data": [
+        {
+          "text": "hye"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6bee521c-a594-4def-8ace-3aa217dcff27",
+      "data": [
+        {
+          "text": "hello"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "82ddd518-dfb7-4d20-9fa5-13dce2cff1bf",
+      "data": [
+        {
+          "text": "hi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "9a29a21a-a0a8-4286-aa02-12023585963d",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Hi, I am Donare!! What are you donating today ??"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "userSays": [
+    {
+      "id": "5b2b19d0-78eb-4f07-aadf-4f2ad61b38a4",
+      "data": [
+        {
+          "text": "500 $",
+          "alias": "unit-currency",
+          "meta": "@sys.unit-currency",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "NGO b",
+          "alias": "NGOs",
+          "meta": "@NGOs",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a7940684-2dda-4f76-8c6d-cec3ddb07070",
+      "data": [
+        {
+          "text": "ngo b",
+          "alias": "NGOs",
+          "meta": "@NGOs",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b3a662b7-3aa4-434a-8700-ad16ede7c327",
+      "data": [
+        {
+          "text": "NGO A",
+          "alias": "NGOs",
+          "meta": "@NGOs",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    }
+  ],
+  "id": "32d338b8-1306-4559-bba3-5619f0fbc05b",
+  "name": "ngo",
+  "auto": true,
+  "contexts": [
+    "money"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "money",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.unit-currency",
+          "name": "unit-currency",
+          "value": "$unit-currency",
+          "prompts": [],
+          "defaultValue": "#money.unit-currency"
+        },
+        {
+          "required": true,
+          "dataType": "@NGOs",
+          "name": "NGOs",
+          "value": "$NGOs",
+          "prompts": [
+            "I don\u0027t get that.. could you repeat to which NGOs you want to contribute."
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "you are ready to donate $unit-currency to $NGOs..."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

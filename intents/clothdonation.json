@@ -1,0 +1,231 @@
+{
+  "userSays": [
+    {
+      "id": "7bc4efd7-3266-4ecd-9114-daa8aa71a3a1",
+      "data": [
+        {
+          "text": "i wanna donate "
+        },
+        {
+          "text": "45",
+          "alias": "quantity",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "45ee6678-b3a3-4b6a-b722-db556f207c91",
+      "data": [
+        {
+          "text": "i wanna donate "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e59629fb-c13c-46f3-ab5f-fcf7bd0ac48a",
+      "data": [
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0fc7f4d0-165a-46b8-8fda-fd5d95b6c2f6",
+      "data": [
+        {
+          "text": "i waana donate "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": ". my address is "
+        },
+        {
+          "text": "buddhacolony",
+          "alias": "address1",
+          "meta": "@address1",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ea239a7b-216f-4161-af00-c180b441e307",
+      "data": [
+        {
+          "text": "i want to give my "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0bbe8e14-e734-44a0-b950-7af1732842dc",
+      "data": [
+        {
+          "text": "i want to donate my excess "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "eda672e3-30d1-44c5-ad66-1402528113e5",
+      "data": [
+        {
+          "text": "i wanna donate some "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2fa93587-1e48-4a7b-930d-344557f6e780",
+      "data": [
+        {
+          "text": "I have some extra "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": "\u0027"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7ffc0263-532e-481a-afd4-14150a1cca2b",
+      "data": [
+        {
+          "text": "I have some excess "
+        },
+        {
+          "text": "clothes",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "6b6a21fa-325b-4796-9b71-9101b0678f48",
+  "name": "clothdonation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cloth.don",
+      "affectedContexts": [
+        {
+          "name": "yescloth",
+          "lifespan": 5
+        },
+        {
+          "name": "nocloth",
+          "lifespan": 5
+        },
+        {
+          "name": "cloth",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "prompts": [
+            "which types of donation??"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@address1",
+          "name": "address1",
+          "value": "$address1",
+          "prompts": [
+            "what\u0027s your location?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "quantity",
+          "value": "$quantity",
+          "prompts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Do you want to donate more clothes?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,130 @@
+{
+  "userSays": [
+    {
+      "id": "6a91348d-bbdf-4393-a671-2639fbe930b5",
+      "data": [
+        {
+          "text": "Blood",
+          "alias": "typeofdonation",
+          "meta": "@typeofdonation",
+          "userDefined": false
+        },
+        {
+          "text": " donation camp"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2884e358-a0a2-4e0b-9514-1e6c18d06b12",
+      "data": [
+        {
+          "text": "BLOOD DONATION CAMP is being organised on "
+        },
+        {
+          "text": "17/05/2017",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "1f81032a-7a53-49cf-80c0-5f85b638f6f2",
+  "name": "BLoodDonationcamp",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "prompts": [
+            "on which date the blood donation camp  is being organised."
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@typeofdonation",
+          "name": "typeofdonation",
+          "value": "$typeofdonation",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "title": "which are the blood group people are need to donate the blood",
+          "subtitle": "blood groups:",
+          "imageUrl": "",
+          "buttons": [
+            {
+              "text": "O -",
+              "postback": "BLOOD GROUP :O-"
+            },
+            {
+              "text": "O +",
+              "postback": "BLOOD GROUP :O+"
+            },
+            {
+              "text": "AB+",
+              "postback": "BLOOD GROUP : AB+"
+            }
+          ],
+          "type": 1
+        },
+        {
+          "title": "which are the blood group people are need to donate the blood",
+          "subtitle": "blood groups:",
+          "imageUrl": "",
+          "buttons": [
+            {
+              "text": "A+",
+              "postback": "BLOOD GROUP : A+"
+            },
+            {
+              "text": "A-",
+              "postback": "BLOOD GROUP : A-"
+            },
+            {
+              "text": "B+",
+              "postback": "BLOOD GROUP : B+"
+            }
+          ],
+          "type": 1
+        },
+        {
+          "title": "which are the blood group people are need to donate the blood",
+          "subtitle": "send to people having bllood group ::",
+          "buttons": [
+            {
+              "text": "AB-",
+              "postback": "BLOOD GROUP : AB-"
+            },
+            {
+              "text": "AB+",
+              "postback": "BLOOD GROUP : AB+"
+            },
+            {
+              "text": "ALL",
+              "postback": "BLOOD GROUP : ALL"
+            }
+          ],
+          "type": 1
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

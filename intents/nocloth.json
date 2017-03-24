@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "f7948616-a7ae-4c08-8bd0-c57ef09a2788",
+      "data": [
+        {
+          "text": "i dont wanna add more "
+        },
+        {
+          "text": "clothes",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ed401703-d2f8-49a2-b7af-daeeb237cb55",
+      "data": [
+        {
+          "text": "no"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "12c310a7-f90f-4727-b582-c65bf1268d99",
+      "data": [
+        {
+          "text": "no i dont want to add more"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cc448580-52d2-4911-9d9d-7730fc139b13",
+      "data": [
+        {
+          "text": "that\u0027s enough i don\u0027t wanna add"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e722a8fc-b0ea-4be0-aee8-f30272c4a0a1",
+  "name": "nocloth",
+  "auto": true,
+  "contexts": [
+    "nocloth"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cloth.don",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@address1",
+          "name": "address1",
+          "value": "$address1",
+          "prompts": [],
+          "defaultValue": "#cloth.address1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": []
+}
