@@ -31,13 +31,14 @@ def makeWebhookResult(req):
     if req.get("result").get("action") != "no.item":
         return {}
     
-#     result = req.get("result")
-#     parameters = result.get("parameters")
-#     zone = parameters.get("shipping-zone")
+    result = req.get("result")
+    parameters = result.get("parameters")
+    location = parameters.get("address1")
 
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
     ngo= { 'buddha colony' : 'ngoA' , 'patna' : 'ngoB' , 'boring road' : 'ngoC' , 'rps more' : 'ngoD' , 'dps more' : 'ngoE' }
-    speech = "our ngo will be contacting you soon"
+    
+    speech = "our " + ngo[location] +  "will be contacting you soon."
 
     print("Response:")
     print(speech)
