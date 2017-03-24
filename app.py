@@ -39,7 +39,7 @@ def makeWebhookResult(req):
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
     ngo= { 'buddha colony' : 'ngoA' , 'patna' : 'ngoB' , 'boring road' : 'ngoC' , 'rps more' : 'ngoD' , 'dps more' : 'ngoE' }
     
-    speech = "our " + ngo[location] +  "will be contacting you soon."
+    speech = "our " + ngo[location] +  "  will be contacting you soon."
 
     print("Response:")
     print(speech)
@@ -49,7 +49,7 @@ def makeWebhookResult(req):
         "displayText": speech,
         #"data": {},
         # "contextOut": [],
-        "source": "apiai-onlinestore-shipping"
+        "source": "apiai-online-donare"
     }
 
 
