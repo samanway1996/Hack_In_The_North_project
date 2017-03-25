@@ -13,3 +13,4 @@ In order to respond differently in different context we have used Machine Learni
  we have also used facebook developer tools and heroku for deploying our app.<br> 
 for analytics, we have dashbot.io .
 
+<img src="https://cdn-images-1.medium.com/max/800/1*l0NrPI8UeYQvJO6qM8eYyw.png">
