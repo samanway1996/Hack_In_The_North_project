@@ -12,4 +12,3 @@ In order to respond differently in different context we have used Machine Learni
  we have used api.ai tools for building our chatbots.<br>
  we have also used facebook developer tools and heroku for deploying our app.<br> 
 
-<a href="https://heroku.com/deploy" target="_blank"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
